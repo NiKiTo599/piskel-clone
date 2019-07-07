@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+<link href="app.css" rel="stylesheet"></head>
+
+<body>
+  <section class="title">
+    <h1>PISCEL_CLONE</h1>
+    <div class="cont_right">
+      <div class="title__cont_for_link">
+        <a href="./app.html" class="title__link_to_new">Create Piskel</a>
+        <a href="#" class="title__link_to_sign" id="loginText">Sign Up</a>
+        <a href="#" class="title__link_to_sign" id="logoutText">Sign Out</a>
+      </div>
+      <div class="container__name_and_photo">
+        <p class="title__name_login" id='uName'></p>
+        <img class="title__photo" src='' id='imgHolder' />
+      </div>
+    </div>
+  </section>
+  <section class="main">
+    <aside class="main__tools_and_frames">
+      <div class="main__tools">
+        <div class="tools__size_container">
+          <div class="tools__size_pen thickness-1 select"></div>
+          <div class="tools__size_pen thickness-2"></div>
+          <div class="tools__size_pen thickness-3"></div>
+          <div class="tools__size_pen thickness-4"></div>
+        </div>
+        <ul class="tools__draw">
+          <li class="tools__draw_icon tools__draw__pen"></li>
+          <li class="tools__draw_icon tools__draw__bucket"></li>
+          <li class="tools__draw_icon tools__draw__erasier"></li>
+          <li class="tools__draw_icon tools__draw__rectangle"></li>
+          <li class="tools__draw_icon tools__draw__mirror_pen"></li>
+          <li class="tools__draw_icon tools__draw__lighten"></li>
+          <li class="tools__draw_icon tools__draw__color_picker"></li>
+          <li class="tools__draw_icon tools__draw__dithering"></li>
+          <li class="tools__draw_icon tools__draw__paint_all_pixels"></li>
+          <li class="tools__draw_icon tools__draw__stroke_line"></li>
+          <li class="tools__draw_icon tools__draw__move_tool"></li>
+          <li class="tools__draw_icon tools__draw__shape_tool"></li>
+          <li class="tools__draw_icon tools__draw__rotate_tool"></li>
+          <li class="tools__draw_icon tools__draw__flip_tool"></li>
+          <li class="tools__draw_icon tools__draw__circle"></li>
+        </ul>
+        <div class="tools__current_and_prev_color_container">
+          <div class="tools__primary_color">
+            <input type="color" id="primary">
+          </div>
+          <div class="tools__secondary_color">
+            <input type="color" id="secondary">
+          </div>
+        </div>
+        <div id="open-button" class="open-button"></div>
+      </div>
+      <div class="main__frames">
+        <ul class="frames__list"></ul>
+        <div class="frames__add_new_frame">Add new frame</div>
+      </div>
+    </aside>
+    <div class="main__container_canvas">
+      <div class="main__canvas">
+        <canvas class="palete" id="palete" width="320" height="320"></canvas>
+      </div>
+      <div class="main_canvas_coordinats">
+        <span id="x">X: 0</span>
+        <span id="y">Y: 0</span>
+        <span id="canvas-size">32*32</span>
+      </div>
+    </div>
+    <aside class="main__preview_and_tools__cont">
+      <div class="preview_container">
+        <canvas class="main__preview-animation" id="preview-animation" width="256px" height="256px"></canvas>
+        <div id="fullscreen" class="fullscreen"></div>
+        <div class="fps_cont">
+          <input type="range" id="fps" name="FPS" value="1" min="1" max="24" step="1" list="fps-list">
+          <datalist id="fps-list">
+            <option value="1" label="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+            <option value="11">
+            <option value="12">
+            <option value="13">
+            <option value="14">
+            <option value="15">
+            <option value="16">
+            <option value="17">
+            <option value="18">
+            <option value="19">
+            <option value="20">
+            <option value="21">
+            <option value="22">
+            <option value="23">
+            <option value="24">
+          </datalist>
+          <label for="FPS">FPS</label>
+        </div>
+      </div>
+      <div class="size_of_canvas_cont">
+        <h3>Size for canvas</h3>
+        <input type="text" id="sizeForCanvas" value="32">
+      </div>
+      <div class="main__preview_and_tools__layers">
+        <h3>Layers</h3>
+        <div>
+          <div class="layers__add_new_layer" title="add layer"></div>
+          <div class="layers__delete_layer" title="delete layer"></div>
+          <div class="layers__move_up_layer" title="next layer"></div>
+          <div class="layers__move_down_layer" title="previos layer"></div>
+          <div class="layers__duplicate_layer" title="duplicate layer"></div>
+        </div>
+        <ul class="layers__list"></ul>
+      </div>
+      <div class="buttons">
+        <div id="open-button-export" class="open-btn-export" title="export"></div>
+        <div class="preview__save_usersession" title="save in localStorage"></div>
+      </div>
+    </aside>
+  </section>
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <div class="modal" id="modal">
+    <button class="close-button" id="close-button" title="Закрыть модальное окно">Закрыть</button>
+    <div class="modal-guts">
+      <h2>Tool shortcuts</h2>
+      <div class="tools__draw_icon tools__draw__pen"></div>
+      <div class="tools__draw_icon tools__draw__bucket"></div>
+      <div class="tools__draw_icon tools__draw__erasier"></div>
+      <div class="tools__draw_icon tools__draw__rectangle"></div>
+      <div class="tools__draw_icon tools__draw__mirror_pen"></div>
+      <div class="tools__draw_icon tools__draw__lighten"></div>
+      <div class="tools__draw_icon tools__draw__color_picker"></div>
+      <div class="tools__draw_icon tools__draw__dithering"></div>
+      <div class="tools__draw_icon tools__draw__paint_all_pixels"></div>
+      <div class="tools__draw_icon tools__draw__stroke_line"></div>
+      <div class="tools__draw_icon tools__draw__move_tool"></div>
+      <div class="tools__draw_icon tools__draw__shape_tool"></div>
+      <div class="tools__draw_icon tools__draw__rotate_tool"></div>
+      <div class="tools__draw_icon tools__draw__flip_tool"></div>
+      <div class="tools__draw_icon tools__draw__circle"></div>
+    </div>
+  </div>
+  <div class="modal-overlay-export" id="modal-overlay-export"></div>
+  <div class="modal-export" id="modal-export">
+    <button class="close-button" id="close-button-export" title="Закрыть модальное окно">Закрыть</button>
+    <div class="modal-guts">
+      <div class="main__export">
+        <h2>Choose your export</h2>
+        <div class="container__exportpng">
+          <button class="export__png">Export As PNG</button>
+        </div>
+        <div class="container__exportgif">
+          <button class="export__gif">Export As GIF</button>
+          <button class="export__giphy">Upload to giphy</button>
+        </div>
+        <div class="container__exportapng">
+          <button class="export__apng">Export As APNG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./src/app.js" type="module"></script>
+  <script src="./src/components/frames/frames.js" type="module"></script>
+  <script src="./src/components/tools/pen.js" type="module"></script>
+  <script src="./src/components/tools/eventForTools.js" type="module"></script>
+  <script src="./src/screens/preview/Preview.js" type="module"></script>
+  <script src="./src/screens/preview/index.js" type="module"></script>
+  <script src="./src/components/tools/PaintBucket.js" type="module"></script>
+  <script src="./src/components/colors/Colors.js" type="module"></script>
+  <script src="./src/screens/export/gif/exportAsGif.js" type="module"></script>
+  <script src="./src/components/layers/Layers.js" type="module"></script>
+  <script src="./src/screens/canvas/Canvas.js" type="module"></script>
+  <script src="./src/screens/canvas/Coordinats.js" type="module"></script>
+  <script src="./src/screens/export/png/exportAsPng.js" type="module"></script>
+  <script src="./src/components/tools/MirrorPen.js" type="module"></script>
+  <script src="./src/screens/index.js" type="module"></script>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>
