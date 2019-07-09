@@ -36,7 +36,7 @@
       .main__frames .frames__list .frames__list_item .frames__list_item__delete {
         width: 2.1rem;
         height: 2.1rem;
-        background-image: url(/src/images/3df9cc8d20c13e950a101ef149bfdb5c.png);
+        background-image: url(src/images/frame-recyclebin-white.png?3df9cc8d20c13e950a101ef149bfdb5c);
         background-color: #4682B4;
         position: relative;
         top: 13.4rem; }
@@ -49,7 +49,7 @@
       .main__frames .frames__list .frames__list_item .frames__list_item__duplicate {
         width: 2.1rem;
         height: 2.1rem;
-        background-image: url(/src/images/e02afbd35939775e08e5333d742f6a77.png);
+        background-image: url(src/images/frame-duplicate-white.png?e02afbd35939775e08e5333d742f6a77);
         background-color: #4682B4;
         position: relative;
         top: 9.2rem;
@@ -112,35 +112,35 @@
       margin-right: 1rem;
       margin-bottom: 1rem; }
     .modal .modal-guts .tools__draw__pen {
-      background-image: url(/src/images/3c2109edffbbfb3d978ee54de0c5ad41.png); }
+      background-image: url(src/images/tool-pen.png?3c2109edffbbfb3d978ee54de0c5ad41); }
     .modal .modal-guts .tools__draw__bucket {
-      background-image: url(/src/images/54a9e17400bb83eedeaedd945b82edea.png); }
+      background-image: url(src/images/tool-paint-bucket.png?54a9e17400bb83eedeaedd945b82edea); }
     .modal .modal-guts .tools__draw__erasier {
-      background-image: url(/src/images/172512b231a74023857f897149989fd9.png); }
+      background-image: url(src/images/tool-eraser.png?172512b231a74023857f897149989fd9); }
     .modal .modal-guts .tools__draw__rectangle {
-      background-image: url(/src/images/e1b29d9d7f97fafa9effc6eb95b773ca.png); }
+      background-image: url(src/images/tool-rectangle.png?e1b29d9d7f97fafa9effc6eb95b773ca); }
     .modal .modal-guts .tools__draw__mirror_pen {
-      background-image: url(/src/images/b1d8ce72cb852da8e84e7726c91ad630.png); }
+      background-image: url(src/images/tool-vertical-mirror-pen.png?b1d8ce72cb852da8e84e7726c91ad630); }
     .modal .modal-guts .tools__draw__lighten {
-      background-image: url(/src/images/4b9220fbb0ebbaaf62e4795fa88468a1.png); }
+      background-image: url(src/images/tool-lighten.png?4b9220fbb0ebbaaf62e4795fa88468a1); }
     .modal .modal-guts .tools__draw__color_picker {
-      background-image: url(/src/images/a07c64efcf2c1a222cd899b7139ad3cc.png); }
+      background-image: url(src/images/tool-colorpicker.png?a07c64efcf2c1a222cd899b7139ad3cc); }
     .modal .modal-guts .tools__draw__dithering {
-      background-image: url(/src/images/4d6fcf21cc7d0e6d2e08ef66ae65bc74.png); }
+      background-image: url(src/images/tool-dithering.png?4d6fcf21cc7d0e6d2e08ef66ae65bc74); }
     .modal .modal-guts .tools__draw__paint_all_pixels {
-      background-image: url(/src/images/404c3d93bb19f41ff5b428db29204546.png); }
+      background-image: url(src/images/tool-colorswap.png?404c3d93bb19f41ff5b428db29204546); }
     .modal .modal-guts .tools__draw__stroke_line {
-      background-image: url(/src/images/c539122f3d5b19be28a6dd2729b06c43.png); }
+      background-image: url(src/images/tool-stroke.png?c539122f3d5b19be28a6dd2729b06c43); }
     .modal .modal-guts .tools__draw__move_tool {
-      background-image: url(/src/images/8028d2700f2a3035a4aa25b1d0ce6976.png); }
+      background-image: url(src/images/tool-move.png?8028d2700f2a3035a4aa25b1d0ce6976); }
     .modal .modal-guts .tools__draw__shape_tool {
-      background-image: url(/src/images/06f15bc721a5582fa57893043ee2f678.png); }
+      background-image: url(src/images/tool-shape-select.png?06f15bc721a5582fa57893043ee2f678); }
     .modal .modal-guts .tools__draw__rotate_tool {
-      background-image: url(/src/images/855435e51074156128b5395ec3606d84.png); }
+      background-image: url(src/images/tool-rotate.png?855435e51074156128b5395ec3606d84); }
     .modal .modal-guts .tools__draw__flip_tool {
-      background-image: url(/src/images/935c8b3b47e0d2322db9d6f9460e6314.png); }
+      background-image: url(src/images/tool-flip.png?935c8b3b47e0d2322db9d6f9460e6314); }
     .modal .modal-guts .tools__draw__circle {
-      background-image: url(/src/images/d596f94d852b374ceb63de992f802538.png); }
+      background-image: url(src/images/tool-circle.png?d596f94d852b374ceb63de992f802538); }
 
 .opened {
   display: block; }
@@ -242,11 +242,11 @@
 .buttons {
   display: flex; }
   .buttons .preview__save_usersession {
-    background-image: url(/src/images/1e2d6eb81282ab129af01b8d9e9d7166.png);
+    background-image: url(src/images/export/settings-save-white@2x.png?1e2d6eb81282ab129af01b8d9e9d7166);
     width: 8rem;
     height: 7rem; }
   .buttons .open-btn-export {
-    background-image: url(/src/images/0dde6aeb8d733b7e93296e043ba6e2e9.png);
+    background-image: url(src/images/export/settings-export-white@2x.png?0dde6aeb8d733b7e93296e043ba6e2e9);
     width: 7rem;
     height: 7rem; }
 
@@ -391,7 +391,7 @@
     margin-top: 5px;
     position: absolute;
     top: 75px;
-    background-image: url(/src/images/53753e2d559e87aca7644d6dd3e78a28.png); }
+    background-image: url(src/images/preview/minimap-popup-preview-arrow-gold@2x.png?53753e2d559e87aca7644d6dd3e78a28); }
   .main__preview_and_tools__cont .preview_container .main__preview-animation {
     margin-top: 2rem;
     background-color: white; }
@@ -654,39 +654,39 @@ html {
         .main .main__tools_and_frames .main__tools .tools__draw .select {
           border: 3px solid yellow; }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__pen {
-          background-image: url(/src/images/3c2109edffbbfb3d978ee54de0c5ad41.png); }
+          background-image: url(src/images/tool-pen.png?3c2109edffbbfb3d978ee54de0c5ad41); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__bucket {
-          background-image: url(/src/images/54a9e17400bb83eedeaedd945b82edea.png); }
+          background-image: url(src/images/tool-paint-bucket.png?54a9e17400bb83eedeaedd945b82edea); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__erasier {
-          background-image: url(/src/images/172512b231a74023857f897149989fd9.png); }
+          background-image: url(src/images/tool-eraser.png?172512b231a74023857f897149989fd9); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__rectangle {
-          background-image: url(/src/images/e1b29d9d7f97fafa9effc6eb95b773ca.png); }
+          background-image: url(src/images/tool-rectangle.png?e1b29d9d7f97fafa9effc6eb95b773ca); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__mirror_pen {
-          background-image: url(/src/images/b1d8ce72cb852da8e84e7726c91ad630.png); }
+          background-image: url(src/images/tool-vertical-mirror-pen.png?b1d8ce72cb852da8e84e7726c91ad630); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__lighten {
-          background-image: url(/src/images/4b9220fbb0ebbaaf62e4795fa88468a1.png); }
+          background-image: url(src/images/tool-lighten.png?4b9220fbb0ebbaaf62e4795fa88468a1); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__color_picker {
-          background-image: url(/src/images/a07c64efcf2c1a222cd899b7139ad3cc.png); }
+          background-image: url(src/images/tool-colorpicker.png?a07c64efcf2c1a222cd899b7139ad3cc); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__dithering {
-          background-image: url(/src/images/4d6fcf21cc7d0e6d2e08ef66ae65bc74.png); }
+          background-image: url(src/images/tool-dithering.png?4d6fcf21cc7d0e6d2e08ef66ae65bc74); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__paint_all_pixels {
-          background-image: url(/src/images/404c3d93bb19f41ff5b428db29204546.png); }
+          background-image: url(src/images/tool-colorswap.png?404c3d93bb19f41ff5b428db29204546); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__stroke_line {
-          background-image: url(/src/images/c539122f3d5b19be28a6dd2729b06c43.png); }
+          background-image: url(src/images/tool-stroke.png?c539122f3d5b19be28a6dd2729b06c43); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__move_tool {
-          background-image: url(/src/images/8028d2700f2a3035a4aa25b1d0ce6976.png); }
+          background-image: url(src/images/tool-move.png?8028d2700f2a3035a4aa25b1d0ce6976); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__shape_tool {
-          background-image: url(/src/images/06f15bc721a5582fa57893043ee2f678.png); }
+          background-image: url(src/images/tool-shape-select.png?06f15bc721a5582fa57893043ee2f678); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__rotate_tool {
-          background-image: url(/src/images/855435e51074156128b5395ec3606d84.png); }
+          background-image: url(src/images/tool-rotate.png?855435e51074156128b5395ec3606d84); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__flip_tool {
-          background-image: url(/src/images/935c8b3b47e0d2322db9d6f9460e6314.png); }
+          background-image: url(src/images/tool-flip.png?935c8b3b47e0d2322db9d6f9460e6314); }
         .main .main__tools_and_frames .main__tools .tools__draw .tools__draw__circle {
-          background-image: url(/src/images/d596f94d852b374ceb63de992f802538.png); }
+          background-image: url(src/images/tool-circle.png?d596f94d852b374ceb63de992f802538); }
       .main .main__tools_and_frames .main__tools .open-button {
         align-self: flex-end;
         margin-left: 2rem;
-        background-image: url(/src/images/587b67027dfcefd85d8821561f5f7d01.png);
+        background-image: url(src/images/common-keyboard-gold@2x.png?587b67027dfcefd85d8821561f5f7d01);
         background-repeat: no-repeat;
         background-color: none;
         color: white;
